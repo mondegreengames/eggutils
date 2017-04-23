@@ -75,7 +75,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)libs/SDL/include;$(SolutionDir)libs/nanovg;$(SolutionDir)libs/glew;$(SolutionDir)../freetype-2.7.1/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)libs/SDL/include;$(SolutionDir)libs/nanovg/src;$(SolutionDir)libs/glew;$(SolutionDir)../freetype-2.7.1/include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -101,7 +101,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_MBCS;_CRT_SECURE_NO_WARNINGS;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)SDL/include;$(SolutionDir)nanovg;$(SolutionDir)glew</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)SDL/include;$(SolutionDir)nanovg/src;$(SolutionDir)glew</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -128,19 +128,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\libs\nanovg\fontstash.h" />
-    <ClInclude Include="..\libs\nanovg\nanovg.h" />
-    <ClInclude Include="..\libs\nanovg\nanovg_gl.h" />
-    <ClInclude Include="..\libs\nanovg\nanovg_gl_utils.h" />
-    <ClInclude Include="..\libs\nanovg\stb_image.h" />
-    <ClInclude Include="..\libs\nanovg\stb_truetype.h" />
+    <ClInclude Include="..\libs\nanovg\src\fontstash.h" />
+    <ClInclude Include="..\libs\nanovg\src\nanovg.h" />
+    <ClInclude Include="..\libs\nanovg\src\nanovg_gl.h" />
+    <ClInclude Include="..\libs\nanovg\src\nanovg_gl_utils.h" />
+    <ClInclude Include="..\libs\nanovg\src\stb_image.h" />
+    <ClInclude Include="..\libs\nanovg\src\stb_truetype.h" />
     <ClInclude Include="egg.h" />
     <ClInclude Include="FileSystem.h" />
     <ClInclude Include="noc_file_dialog.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\libs\glew\glew.c" />
-    <ClCompile Include="..\libs\nanovg\nanovg.c" />
+    <ClCompile Include="..\libs\nanovg\src\nanovg.c" />
     <ClCompile Include="FileSystem.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="noc_file_dialog.cpp" />

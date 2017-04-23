@@ -1,0 +1,3 @@
+[submodule "EggBrowser/libs/nanovg"]
+	path = EggBrowser/libs/nanovg
+	url = https://github.com/memononen/nanovg.git
