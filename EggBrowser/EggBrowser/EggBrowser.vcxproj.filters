@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="nanovg">
+      <UniqueIdentifier>{8dfd61fd-2b3c-43bb-933f-e9ffca2e7605}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glew">
+      <UniqueIdentifier>{e7efb146-d861-4ec2-a9d7-2f59fd854e13}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="noc_file_dialog.h" />
+    <ClInclude Include="egg.h" />
+    <ClInclude Include="FileSystem.h" />
+    <ClInclude Include="..\libs\nanovg\fontstash.h" />
+    <ClInclude Include="..\libs\nanovg\nanovg.h" />
+    <ClInclude Include="..\libs\nanovg\nanovg_gl.h" />
+    <ClInclude Include="..\libs\nanovg\nanovg_gl_utils.h" />
+    <ClInclude Include="..\libs\nanovg\stb_image.h" />
+    <ClInclude Include="..\libs\nanovg\stb_truetype.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="noc_file_dialog.cpp" />
+    <ClCompile Include="FileSystem.cpp" />
+    <ClCompile Include="..\libs\glew\glew.c" />
+    <ClCompile Include="..\libs\nanovg\nanovg.c" />
+  </ItemGroup>
+</Project>
